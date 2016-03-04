@@ -1,8 +1,8 @@
 // code Olegnd
 //areInterseсted    
-function areInterseсted(recntangleF1,recntangleF2) 
+function defineIntersection(recntangleF1,recntangleF2) 
 {
-
+var recntangleF1,recntangleF2;
 var left1,top1,width1,height1;
 var left2,top2,width2,height2;
 var a1=[],b1=[],c1=[],d1=[];
@@ -139,17 +139,20 @@ var result;
 //filterVisible
 function filterVisible(recntangleF1,arrRecntangleF) 
 {
-    var indexArrRecntangleF;
-    var arrResult=[];
+var recntangleF1,arrRecntangleF;
+var indexArrRecntangleF;
+var arrResult=[];
     function funForFilter(recntangleFF)
-                     {var result;
+                     {
+                      var recntangleFF;     
+                      var result;
                       if(   recntangleFF.width  ===0
                          || recntangleFF.height ===0)   
                         {
                             recntangleFF.left=recntangleF1.left;
                             recntangleFF.top =recntangleF1.top;
                         } 
-                            result=areInterseсted(recntangleF1,recntangleFF); 
+                            result=defineIntersection(recntangleF1,recntangleFF); 
                       if(result===true)
                         {
                             return true; 
