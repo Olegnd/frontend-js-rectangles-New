@@ -2,15 +2,14 @@
 //areInterseсted    
 function defineIntersection(recntangleF1,recntangleF2) 
 {
-var recntangleF1,recntangleF2;
-var left1,top1,width1,height1;
-var left2,top2,width2,height2;
-var a1=[],b1=[],c1=[],d1=[];
-var a2=[],b2=[],c2=[],d2=[];
-var distancePointPoint1,distancePointPoint2,
-    distancePointPoint3,distancePointPoint4;
-var width11,height11,width22,height22;   
-var result;
+ var left1,top1,width1,height1;
+ var left2,top2,width2,height2;
+ var a1=[],b1=[],c1=[],d1=[];
+ var a2=[],b2=[],c2=[],d2=[];
+ var distancePointPoint1,distancePointPoint2,
+     distancePointPoint3,distancePointPoint4;
+ var width11,height11,width22,height22;   
+ var result;
     left1  =recntangleF1.left;
     top1   =recntangleF1.top;
     width1 =recntangleF1.width;
@@ -139,12 +138,10 @@ var result;
 //filterVisible
 function filterVisible(recntangleF1,arrRecntangleF) 
 {
-var recntangleF1,arrRecntangleF;
-var indexArrRecntangleF;
-var arrResult=[];
+ var indexArrRecntangleF;
+ var arrResult=[];
     function funForFilter(recntangleFF)
                      {
-                      var recntangleFF;     
                       var result;
                       if(   recntangleFF.width  ===0
                          || recntangleFF.height ===0)   
